@@ -1,3 +1,9 @@
+Who is this designed for?
+------------------------------------
+This script can be used by any dev, but is specifically created for a VIVO dev that may also want or have the need to use that env for other projects.\
+It is designed to be used the WSL2 on Windows 10 Build 2004 or higher and with the Ubuntu 18.04 Distro.
+
+
 Sets up the following within WSL2
 ------------------------------------
 Azure CLI\
@@ -17,7 +23,7 @@ OpenJDK 11 (JDK and JRE)\
 Maven 3.6\
 Tomcat 9\
 Solr 8.6.3\
-smtp4dev\
+smtp4dev (as a docker container)\
 MariaDB 10.5\
 OpenBSD SSH Server
 
