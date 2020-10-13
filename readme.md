@@ -1,4 +1,4 @@
-Installs
+Sets up the following within WSL2
 ------------------------------------
 Azure CLI\
 dotNet SDK 2.1\
@@ -30,6 +30,6 @@ NodeJS and NPM Repo from Nodesource\
 Microsoft Ubuntu Repo (and Key)\
 Docker Repo (and Key)\
 Google Cloud Kubectl Repo (and Key)\
-MariaDB Repo (and Key)\
+MariaDB Repo (and Key)
 
 (Note: By adding the above repos apt-get is able to keep those items up to date.)
