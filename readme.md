@@ -9,24 +9,24 @@ The PowerShell script is to assist those that currently do not have WSL2 install
 Sets up the following within WSL2
 ------------------------------------
 Azure CLI\
-dotNet SDK 2.1\
-dotNet SDK 3.1\
-Mono Complete\
-NodeJS 12 LTS\
-NPM\
+dotNet SDK v2.1\
+dotNet SDK v3.1\
+Mono Complete v6.12\
+NodeJS v12.19\
+NPM v6.14\
 PowerShell Core 7\
-Docker CE\
+Docker CE v19.03\
 kubectl\
-Python 3.8\
-Pip3\
+Python v3.8\
+Pip3 v9.0.1\
 docker-compose (via Pip3)\
-Git 2.17 (git-all)\
-OpenJDK 11 (JDK and JRE)\
-Maven 3.6\
-Tomcat 9\
-Solr 8.6.3\
+Git v2.17 (git-all)\
+OpenJDK 11 LTS (JDK and JRE)\
+Maven v3.6\
+Tomcat v9\
+Solr v8.6.3\
 smtp4dev (as a docker container)\
-MariaDB 10.5\
+MariaDB v10.5\
 OpenBSD SSH Server
 
 Adds the Repos
