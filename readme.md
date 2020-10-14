@@ -51,6 +51,16 @@ What the script does beyond package installs...
 5. Appends to .profile the service starts
 6. Appends "sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get autoremove -y" to keep the system updated.
 
+```
+DOTNET_CLI_TELEMETRY_OPTOUT=1
+sudo service ssh start
+sudo service docker start
+sudo service solr start
+sudo service mariadb start
+~/scholars/bin/startup.sh
+sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get autoremove -y
+```
+
 Other
 --------------------------------------
 You may want to add this to your /etc/security/limits.conf
