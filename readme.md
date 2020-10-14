@@ -1,8 +1,10 @@
 Who is this designed for?
 ------------------------------------
-This script can be used by any dev, but is specifically created for a VIVO dev that may also want or have the need to use that env for other projects.\
+This script (setup_dev_env_in_wsl2.sh) can be used by any dev, but is specifically created for a VIVO dev that may also want or have the need to use that env for other projects.
+
 It is designed to be used the WSL2 on Windows 10 Build 2004 or higher and with the Ubuntu 18.04 Distro.
 
+The PowerShell script is to assist those that currently do not have WSL2 installed.  You should reboot after running.
 
 Sets up the following within WSL2
 ------------------------------------
