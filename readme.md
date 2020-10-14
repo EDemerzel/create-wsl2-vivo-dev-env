@@ -42,6 +42,15 @@ MariaDB Repo (and Key)
 
 (Note: By adding the above repos apt-get is able to keep those items up to date.)
 
+What the script does beyond package installs...
+--------------------------------------
+1. Creates the keys for the SSH Server
+2. Creates the key pair for the WSL account
+3. Creates a tomcat instance called "scholars"
+4. Sets up "vivocore" in Solr
+5. Appends to .profile the service starts
+6. Appends "sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get autoremove -y" to keep the system updated.
+
 Other
 --------------------------------------
 You may want to add this to your /etc/security/limits.conf
