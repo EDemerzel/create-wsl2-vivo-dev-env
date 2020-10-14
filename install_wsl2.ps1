@@ -1,4 +1,4 @@
-cd $HOME
+Set-Location $HOME
 
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 
