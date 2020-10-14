@@ -153,6 +153,11 @@ git clone https://github.com/vivo-project/sample-data.git
 cd ..
 
 ##########################################################################
+# make VIVO-Dir
+cd ~
+mkdir VIVO
+
+##########################################################################
 #For creating a localhost fake smtp
 #https://github.com/rnwood/smtp4dev
 #http://localhost:3000 is the web interface
