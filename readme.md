@@ -50,6 +50,7 @@ What the script does beyond package installs...
 4. Sets up "vivocore" in Solr
 5. Appends to .profile the service starts
 6. Appends "sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get autoremove -y" to keep the system updated.
+7. Turns off Microsoft dotNet Telemetry for additional privacy
 
 ```
 DOTNET_CLI_TELEMETRY_OPTOUT=1
