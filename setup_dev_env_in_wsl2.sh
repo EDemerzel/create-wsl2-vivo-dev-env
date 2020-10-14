@@ -86,6 +86,8 @@ sudo apt-get install -y docker-ce containerd.io
 sudo apt-get install -y kubectl
 
 # install python3 and docker-compose
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt-get update
 sudo apt-get install -y python3.8 python3.8-dev python3.8-venv python3-pip
 pip3 install docker-compose
 
