@@ -51,6 +51,7 @@ What the script does beyond package installs...
 5. Appends to .profile the service starts
 6. Appends "sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get autoremove -y" to keep the system updated.
 7. Turns off Microsoft dotNet Telemetry for additional privacy
+8. Clones from GitHub: VIVO, Vitro, VIVO-Languages, Vitro-Languages, and VIVO Sample Data
 
 ```
 DOTNET_CLI_TELEMETRY_OPTOUT=1
