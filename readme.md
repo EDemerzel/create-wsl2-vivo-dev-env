@@ -20,7 +20,7 @@ kubectl\
 Python v3.8\
 Pip3 v9.0.1\
 docker-compose (via Pip3)\
-Git v2.17 (git-all)\
+Git v2.28 (git-all)\
 OpenJDK 11 LTS (JDK and JRE)\
 Maven v3.6\
 Tomcat v9\
@@ -38,7 +38,8 @@ NodeJS and NPM Repo from Nodesource\
 Microsoft Ubuntu Repo (and Key)\
 Docker Repo (and Key)\
 Google Cloud Kubectl Repo (and Key)\
-MariaDB Repo (and Key)
+MariaDB Repo (and Key)\
+"Ubuntu Git Maintainers" team ppa:git-core/ppa
 
 (Note: By adding the above repos apt-get is able to keep those items up to date.)
 
