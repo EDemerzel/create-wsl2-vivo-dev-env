@@ -134,11 +134,23 @@ sudo usermod -aG solr ${USER}
 sudo newgrp solr
 
 # get vivocore solr files from git and installls 
+mkdir repos
+cd repos
 git clone https://github.com/vivo-project/vivo-solr.git
 sudo service solr stop
 sudo rm -rv /var/solr/data/vivocore
-sudo cp -r ~/vivo-solr/vivocore /var/solr/data/vivocore
+sudo cp -r ~/repos/vivo-solr/vivocore /var/solr/data/vivocore
 sudo chown -R solr vivocore
+cd ..
+
+# clone VIVO repos
+cd repos
+git clone https://github.com/vivo-project/VIVO.git
+git clone https://github.com/vivo-project/Vitro.git
+git clone https://github.com/vivo-project/VIVO-languages.git
+git clone https://github.com/vivo-project/Vitro-languages.git
+git clone https://github.com/vivo-project/sample-data.git
+cd ..
 
 ##########################################################################
 #For creating a localhost fake smtp
