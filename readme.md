@@ -39,7 +39,8 @@ Microsoft Ubuntu Repo (and Key)\
 Docker Repo (and Key)\
 Google Cloud Kubectl Repo (and Key)\
 MariaDB Repo (and Key)\
-"Ubuntu Git Maintainers" team ppa:git-core/ppa
+"Ubuntu Git Maintainers" team ppa:git-core/ppa\
+Python versions packaged for Ubuntu ppa:deadsnakes/ppa
 
 (Note: By adding the above repos apt-get is able to keep those items up to date.)
 
