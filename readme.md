@@ -46,7 +46,8 @@ Other
 --------------------------------------
 You may want to add this to your /etc/security/limits.conf
 
-```solr    soft    nofile  65000
+```
+solr    soft    nofile  65000
 solr    soft    nproc   65000
 solr    hard    nofile  65000
 solr    hard    nproc   65000
