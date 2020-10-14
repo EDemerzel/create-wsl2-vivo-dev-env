@@ -176,6 +176,7 @@ sudo service mariadb start
 echo 'DOTNET_CLI_TELEMETRY_OPTOUT=1' >> .profile
 echo 'sudo service ssh start' >> .profile
 echo 'sudo service docker start' >> .profile
+echo 'docker run -d -p 3000:80 -p 25:25 rnwood/smtp4dev:v3' >> .profile
 echo 'sudo service solr start' >> .profile
 echo 'sudo service mariadb start' >> .profile
 echo '~/scholars/bin/startup.sh' >> .profile
