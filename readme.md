@@ -90,3 +90,9 @@ Add to ~scholars/conf/tomcat-users.xml (and make sure you change that password)
 <role rolename="admin-gui" />
 <user username="admin" password="notagoodpassword" roles="manager-gui,admin-gui" />
 ```
+
+To update the paths in the VIVO settings.xml file within vivo_files 
+
+```
+sed -i 's/wsl_username/'${USER}'/g' settings.xml
+```
