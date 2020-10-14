@@ -93,6 +93,8 @@ pip3 install docker-compose
 sudo apt-get install -y default-jdk
 
 # install git
+sudo add-apt-repository ppa:git-core/ppa
+sudo apt-get update
 sudo apt-get install -y git-all
 
 # install maven
