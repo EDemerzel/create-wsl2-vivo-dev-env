@@ -161,6 +161,7 @@ sudo service solr start
 sudo service mariadb start
 
 # adds service starts and updates to profile
+echo 'DOTNET_CLI_TELEMETRY_OPTOUT=1' >> .profile
 echo 'sudo service ssh start' >> .profile
 echo 'sudo service docker start' >> .profile
 echo 'sudo service solr start' >> .profile
