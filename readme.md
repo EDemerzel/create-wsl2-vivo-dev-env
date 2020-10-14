@@ -73,3 +73,17 @@ solr    soft    nproc   65000
 solr    hard    nofile  65000
 solr    hard    nproc   65000
 ```
+
+Add to ~scholars/conf/tomcat-users.xml (and make sure you change that password)
+
+```
+#paste inside <tomcat-users> </tomcat-users> tags
+
+<!-- user manager can access only manager section -->
+<role rolename="manager-gui" />
+<user username="manager" password="notagoodpassword" roles="manager-gui" />
+
+<!-- user admin can access manager and admin section both -->
+<role rolename="admin-gui" />
+<user username="admin" password="notagoodpassword" roles="manager-gui,admin-gui" />
+```
