@@ -57,6 +57,7 @@ What the script does beyond package installs...
 DOTNET_CLI_TELEMETRY_OPTOUT=1
 sudo service ssh start
 sudo service docker start
+docker run -d -p 3000:80 -p 25:25 rnwood/smtp4dev:v3
 sudo service solr start
 sudo service mariadb start
 ~/scholars/bin/startup.sh
