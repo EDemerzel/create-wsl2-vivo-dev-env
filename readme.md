@@ -25,7 +25,7 @@ OpenJDK 11 LTS (JDK and JRE)\
 Maven v3.6\
 Tomcat v9\
 Solr v8.6.3\
-smtp4dev (as a docker container)\
+smtp4dev (as a docker container) - the "fake" smtp email server for development and testing\
 MariaDB v10.5\
 OpenBSD SSH Server
 
