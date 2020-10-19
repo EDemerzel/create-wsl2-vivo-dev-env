@@ -77,7 +77,7 @@ solr    hard    nofile  65000
 solr    hard    nproc   65000
 ```
 
-Add to ~scholars/conf/tomcat-users.xml (and make sure you change that password)
+Add to ~/scholars/conf/tomcat-users.xml (and make sure you change that password)
 
 ```
 #paste inside <tomcat-users> </tomcat-users> tags
