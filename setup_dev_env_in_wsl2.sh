@@ -151,7 +151,7 @@ git clone https://github.com/vivo-project/vivo-solr.git
 sudo service solr stop
 sudo rm -rv /var/solr/data/vivocore
 sudo cp -r ~/repos/vivo-solr/vivocore /var/solr/data/vivocore
-sudo chown -R solr vivocore
+sudo chown -R solr:solr /var/solr/data/vivocore
 cd ..
 
 # clone VIVO repos
