@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd ~
+
 # update the package manager
 sudo apt-get update
 sudo apt-get install -y ca-certificates curl apt-transport-https lsb-release gnupg dirmngr software-properties-common build-essential gnupg-curl
@@ -39,6 +41,7 @@ nodejs -v
 npm -v
 
 # Download the Microsoft repository GPG keys
+cd ~
 wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb
 
 # Register the Microsoft repository GPG keys
@@ -62,13 +65,15 @@ sudo apt-get install -y apt-transport-https ca-certificates curl software-proper
 #   note you will need to logout and login before this takes affect (which we do later)
 sudo groupadd docker
 sudo usermod -aG docker ${USER}
-sudo newgrp docker
+
 
 # add Docker key and repo
+cd ~
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 
 # (optional) add kubectl key and repo
+cd ~
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
 
@@ -105,7 +110,7 @@ sudo apt-get install -y maven
 # install tomcat9
 sudo apt-get install -y tomcat9 tomcat9-admin tomcat9-common tomcat9-docs tomcat9-examples tomcat9-user
 sudo usermod -aG tomcat ${USER}
-sudo newgrp tomcat
+
 
 # create tomcat9 instance and start
 cd ~
@@ -115,10 +120,12 @@ cp /etc/tomcat9/Catalina/localhost/* ~/scholars/conf/Catalina/localhost
 
 
 # install ssh server
+cd ~
 sudo apt-get install -y ssh
 sudo /usr/bin/ssh-keygen -A
 
 # create keys for ssh to your WSL account (accept defaults)
+cd ~
 ssh-keygen
 cd ~/.ssh
 cp id_rsa authorized_keys
@@ -127,17 +134,17 @@ cd ~
 
 # install solr and init vivocore
 cd /opt
-wget https://archive.apache.org/dist/lucene/solr/8.6.3/solr-8.6.3.tgz
-tar xzf solr-8.6.3.tgz solr-8.6.3/bin/install_solr_service.sh --strip-components=2
+sudo wget https://archive.apache.org/dist/lucene/solr/8.6.3/solr-8.6.3.tgz
+sudo tar xzf solr-8.6.3.tgz solr-8.6.3/bin/install_solr_service.sh --strip-components=2
 sudo bash ./install_solr_service.sh solr-8.6.3.tgz
 sudo service solr stop
 sudo service solr start
-sudo service solr status
 sudo su - solr -c "/opt/solr/bin/solr create -c vivocore -n data_driven_schema_configs"
 sudo usermod -aG solr ${USER}
-sudo newgrp solr
+
 
 # get vivocore solr files from git and installls 
+cd ~
 mkdir repos
 cd repos
 git clone https://github.com/vivo-project/vivo-solr.git
@@ -148,6 +155,7 @@ sudo chown -R solr vivocore
 cd ..
 
 # clone VIVO repos
+cd ~
 cd repos
 git clone https://github.com/vivo-project/VIVO.git
 git clone https://github.com/vivo-project/Vitro.git
