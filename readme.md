@@ -34,7 +34,7 @@ What's Installed
 The setup_dev_env_in_wsl2_r2.sh script installs the following packages:
 
 - Azure CLI: A command-line tool for managing Azure resources.
-- .NET SDK 2.1 and 3.1: Software development kits for building .NET applications.
+- .NET SDK 3.1 and 5.0: Software development kits for building .NET applications.
 - ~~Mono Complete: A software platform designed to allow developers to easily create cross-platform applications.~~
 - Node.js 14 LTS: A JavaScript runtime built on Chrome's V8 JavaScript engine.
 - NPM: The package manager for Node.js.
@@ -43,12 +43,12 @@ The setup_dev_env_in_wsl2_r2.sh script installs the following packages:
 - kubectl: A command-line tool for controlling Kubernetes clusters.
 - Python 3.8: A programming language that lets you work quickly and integrate systems more effectively.
 - Pip3: A package installer for Python.
-- docker-compose (via Pip3): A tool for defining and running multi-container Docker applications.
+- docker-compose: A tool for defining and running multi-container Docker applications.
 - Git 2.17 (git-all): A free and open-source distributed version control system.
 - OpenJDK 11 (JDK and JRE): An open-source implementation of the Java Platform, Standard Edition.
 - Maven 3.6: A software project management and comprehension tool.
 - Tomcat 9: An open-source implementation of the Java Servlet, JavaServer Pages, Java Expression Language, and Java WebSocket technologies.
-- Solr 8.6.3: An open-source enterprise-search platform from the Apache Lucene project.
+- Solr 8.11.2: An open-source enterprise-search platform from the Apache Lucene project. (With Log4J 2.17.1)
 - smtp4dev: A dummy SMTP server for Windows, Linux, Mac OS-X, and Docker.
 - MariaDB 10.5: A community-developed fork of the MySQL relational database management system.
 - OpenBSD SSH Server: A free version of the SSH connectivity tools.
