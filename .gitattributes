@@ -1,0 +1,2 @@
+*.appx filter=lfs diff=lfs merge=lfs -text
+*.AppxBundle filter=lfs diff=lfs merge=lfs -text
